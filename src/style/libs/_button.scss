@@ -70,3 +70,17 @@
 		background: darken($active, 25%);
 	}
 }
+
+.newcomer-btn {
+	@include button-bg($active, #ffffff, 198px, 58px);
+	margin-top: 60px;
+	&:hover {
+		background: darken($active, 8%);
+		color: #ffffff;
+		border: none;
+		transition: all 0.3s ease;
+	}
+	&:active {
+		background: darken($active, 25%);
+	}
+}

@@ -54,8 +54,19 @@
 	}
 	&__social {
 		margin-top: 110px;
+		a {
+			text-decoration: none;
+			&:active {
+				text-decoration: none;
+				border: none;
+			}
+		}
 	}
 	&__img {
 		max-width: 589px;
 	}
+}
+
+.hero__social a svg:hover path {
+	fill-opacity: 1;
 }

@@ -35,19 +35,9 @@
 					line-height: 24px;
 					color: rgba(255, 255, 255, 0.55);
 					text-decoration: none;
-					&:hover {
-						color: #ffffff;
-						transition: all 0.3s ease;
-					}
 				}
 				svg {
 					margin-top: 2.5px;
-					path {
-						&:hover {
-							stroke-opacity: 1;
-							transition: all 0.3s ease;
-						}
-					}
 				}
 			}
 		}
@@ -70,4 +60,14 @@
 			}
 		}
 	}
+}
+
+.header__menu ul li:hover a {
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+
+.header__menu ul li:hover svg path {
+	stroke-opacity: 1;
+	transition: all 0.3s ease;
 }
