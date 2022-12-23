@@ -1,0 +1,72 @@
+@mixin button-bg($bg, $color, $width, $height) {
+	background: $bg;
+	width: $width;
+	height: $height;
+	color: $color;
+}
+
+.btn {
+	display: flex;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	border: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__btn {
+	@include button-bg($active, #fdf5ff, 118px, 48px);
+	&:hover {
+		background: darken($active, 8%);
+		transition: all 0.3s ease;
+	}
+	&:active {
+		background: darken($active, 25%);
+	}
+}
+
+.search__btn {
+	@include button-bg($active, #ffffff, 130.43px, 48px);
+	&:hover {
+		background: darken($active, 8%);
+		transition: all 0.3s ease;
+	}
+	&:active {
+		background: darken($active, 25%);
+	}
+}
+
+.popular-btn {
+	@include button-bg($none, rgba(255, 255, 255, 0.55), 106px, 42px);
+	&:hover {
+		background: darken($active, 8%);
+		color: #ffffff;
+		transition: all 0.3s ease;
+	}
+	&:active {
+		background: darken($active, 25%);
+	}
+}
+
+.popular-btn-load {
+	@include button-bg(#1e252b, #ff6e30, 184px, 64px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	margin: 0 auto;
+	margin-top: 100px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	&:hover {
+		background: darken($active, 8%);
+		color: #ffffff;
+		border: none;
+		transition: all 0.3s ease;
+	}
+	&:active {
+		background: darken($active, 25%);
+	}
+}

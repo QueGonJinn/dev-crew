@@ -1,0 +1,61 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+	background: url(./img/hero_bg.png) no-repeat bottom right;
+	&__wrapper {
+		width: 1224px;
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__about {
+		margin-top: 104px;
+		max-width: 600px;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 50px;
+		line-height: 140%;
+		color: rgba(255, 255, 255, 0.9);
+		span {
+			color: #ff6e30;
+		}
+	}
+	&__descr {
+		margin-top: 30px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+		color: rgba(255, 255, 255, 0.55);
+	}
+	&__search {
+		margin-top: 60px;
+		max-width: 498px;
+		height: 64px;
+		display: flex;
+		padding: 8px 11px 8px 18px;
+		background: #283036;
+		border-radius: 15px;
+		justify-content: space-between;
+		align-items: center;
+		&-input {
+			display: flex;
+			align-items: center;
+			gap: 13px;
+			input {
+				background: none;
+				border: none;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: rgba(255, 255, 255, 0.38);
+			}
+		}
+	}
+	&__social {
+		margin-top: 110px;
+	}
+	&__img {
+		max-width: 589px;
+	}
+}

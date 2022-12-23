@@ -1,0 +1,13 @@
+@import 'libs/normalize';
+@import 'style/libs/_fonts';
+@import 'style/libs/_variebles';
+@import 'style/libs/button';
+@import 'style/header';
+@import 'style/section/hero';
+@import 'style/section/popular';
+
+body {
+	background: $main;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+}
