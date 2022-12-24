@@ -7,9 +7,23 @@
 @import 'style/section/popular';
 @import 'style/section/brand';
 @import 'style/section/newcomer';
+@import 'style/section/testimonial';
+@import 'style/section/join';
+@import 'style/footer';
 
 body {
 	background: $main;
 	font-family: 'Poppins', sans-serif;
 	color: #ffffff;
+}
+
+a {
+	outline: none;
+}
+
+a:active {
+	outline: none !important;
+}
+a:-webkit-any-link {
+	outline: none;
 }

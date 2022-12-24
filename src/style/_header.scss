@@ -8,6 +8,12 @@
 		display: flex;
 		align-items: center;
 		gap: 12px;
+		text-decoration: none;
+		outline: none;
+		&:active {
+			border: none;
+			outline: none;
+		}
 
 		p {
 			font-weight: 600;
@@ -35,6 +41,7 @@
 					line-height: 24px;
 					color: rgba(255, 255, 255, 0.55);
 					text-decoration: none;
+					outline: none;
 				}
 				svg {
 					margin-top: 2.5px;
@@ -53,10 +60,18 @@
 			color: rgba(255, 255, 255, 0.78);
 			opacity: 0.78;
 			text-decoration: none;
+			outline: none;
 			&:hover {
 				color: #ffffff;
 				transition: all 0.3s ease;
 				opacity: 1;
+				outline: none;
+			}
+			&:active {
+				color: #ffffff;
+				transition: all 0.3s ease;
+				opacity: 1;
+				outline: none;
 			}
 		}
 	}
@@ -65,9 +80,16 @@
 .header__menu ul li:hover a {
 	color: #ffffff;
 	transition: all 0.3s ease;
+	outline: none;
+}
+.header__menu ul li:active a {
+	color: #ffffff;
+	transition: all 0.3s ease;
+	outline: none;
 }
 
 .header__menu ul li:hover svg path {
 	stroke-opacity: 1;
 	transition: all 0.3s ease;
+	outline: none;
 }

@@ -1,4 +1,6 @@
 .hero {
+	max-width: 1440px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	background: url(./img/hero_bg.png) no-repeat bottom right;
@@ -31,7 +33,7 @@
 	&__search {
 		margin-top: 60px;
 		max-width: 498px;
-		height: 64px;
+		height: 48px;
 		display: flex;
 		padding: 8px 11px 8px 18px;
 		background: #283036;
